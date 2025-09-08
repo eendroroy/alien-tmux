@@ -1,0 +1,27 @@
+%if "#{==:#{@session_fg},}" set -g @session_fg                 black                     %endif
+%if "#{==:#{@session_fg},}" set -g @session_bg                 blue                %endif
+%if "#{==:#{@session_fg},}" set -g @window_fg                  white                     %endif
+%if "#{==:#{@session_fg},}" set -g @window_bg                  brightblack               %endif
+%if "#{==:#{@session_fg},}" set -g @current_window_fg          black                     %endif
+%if "#{==:#{@session_fg},}" set -g @current_window_bg          cyan                     %endif
+
+%if "#{==:#{@session_fg},}" set -g @prefix_highlight_fg        black                     %endif
+%if "#{==:#{@session_fg},}" set -g @prefix_highlight_bg        brightcyan                       %endif
+%if "#{==:#{@session_fg},}" set -g @time_fg                    white                     %endif
+%if "#{==:#{@session_fg},}" set -g @time_bg                    brightblack                     %endif
+%if "#{==:#{@session_fg},}" set -g @host_fg                    black                     %endif
+%if "#{==:#{@session_fg},}" set -g @host_bg                    brightblue                       %endif
+
+%if "#{==:#{@session_fg},}" set -g status-style                bg=black,fg=white         %endif
+%if "#{==:#{@session_fg},}" set -g pane-border-style           bg=default,fg=brightblack %endif
+%if "#{==:#{@session_fg},}" set -g pane-active-border-style    bg=default,fg=blue        %endif
+%if "#{==:#{@session_fg},}" set -g message-style               bg=brightblack,fg=cyan    %endif
+%if "#{==:#{@session_fg},}" set -g message-command-style       bg=brightblack,fg=cyan    %endif
+%if "#{==:#{@session_fg},}" set -g display-panes-colour        black                     %endif
+%if "#{==:#{@session_fg},}" set -g display-panes-active-colour brightblack               %endif
+
+%if "#{==:#{@session_fg},}" set -g status-interval 1                                     %endif
+%if "#{==:#{@session_fg},}" set -g status on                                             %endif
+%if "#{==:#{@session_fg},}" set -g status-justify left                                   %endif
+
+set -g @status-bg black
