@@ -5,6 +5,7 @@
 - Default `set -g @alien_colorscheme 'default'`
 - Catppuccin (Macchiato) `set -g @alien_colorscheme 'catppuccin/macchiato'`
 - Nordish `set -g @alien_colorscheme 'nordish'`
+- Grayscale `set -g @alien_colorscheme '256/grayscale'`
 
 ### Configurations
 
