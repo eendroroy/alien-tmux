@@ -1,0 +1,27 @@
+%if "#{==:#{@session_fg},}" set -g @session_fg                 "#494d64"                 %endif
+%if "#{==:#{@session_fg},}" set -g @session_bg                 "#8aadf4"                 %endif
+%if "#{==:#{@session_fg},}" set -g @window_fg                  "#a5adcb"                 %endif
+%if "#{==:#{@session_fg},}" set -g @window_bg                  "#5b6078"                 %endif
+%if "#{==:#{@session_fg},}" set -g @current_window_fg          "#494d64"                 %endif
+%if "#{==:#{@session_fg},}" set -g @current_window_bg          "#a5adcb"                 %endif
+
+%if "#{==:#{@session_fg},}" set -g @prefix_highlight_fg        "#494d64"                 %endif
+%if "#{==:#{@session_fg},}" set -g @prefix_highlight_bg        "#ed8796"                 %endif
+%if "#{==:#{@session_fg},}" set -g @time_fg                    "#494d64"                 %endif
+%if "#{==:#{@session_fg},}" set -g @time_bg                    "#a5adcb"                 %endif
+%if "#{==:#{@session_fg},}" set -g @host_fg                    "#494d64"                 %endif
+%if "#{==:#{@session_fg},}" set -g @host_bg                    "#eed49f"                 %endif
+
+%if "#{==:#{@session_fg},}" set -g status-style                bg="#24273a",fg="#cad3f5" %endif
+%if "#{==:#{@session_fg},}" set -g pane-border-style           bg="#24273a",fg="#5b6078" %endif
+%if "#{==:#{@session_fg},}" set -g pane-active-border-style    bg="#24273a",fg="#8aadf4" %endif
+%if "#{==:#{@session_fg},}" set -g message-style               bg="#5b6078",fg="#8bd5ca" %endif
+%if "#{==:#{@session_fg},}" set -g message-command-style       bg="#5b6078",fg="#8bd5ca" %endif
+%if "#{==:#{@session_fg},}" set -g display-panes-colour        "#494d64"                 %endif
+%if "#{==:#{@session_fg},}" set -g display-panes-active-colour "#5b6078"                 %endif
+
+%if "#{==:#{@session_fg},}" set -g status-interval 1                                     %endif
+%if "#{==:#{@session_fg},}" set -g status on                                             %endif
+%if "#{==:#{@session_fg},}" set -g status-justify left                                   %endif
+
+set -g @status-bg "#24273a"
