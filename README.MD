@@ -11,7 +11,12 @@
 
 ```shell
 set -g @alien_colorscheme 'default'
+set -g @alien_time_format '%I:%M:%S %p'
+```
 
+## Themes customization
+
+```shell
 set - g @session_fg                 black
 set - g @session_bg                 brightblue
 set - g @window_fg                  white
