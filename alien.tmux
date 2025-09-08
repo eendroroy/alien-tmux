@@ -7,6 +7,10 @@ __cleanup() {
 }
 
 __load() {
+  set -g status-interval 1
+  set -g status on
+  set -g status-justify left
+
   local color_scheme=$(tmux show-option -gqv "@alien_colorscheme")
   local time_format=$(tmux show-option -gqv "@alien_time_format")
 
