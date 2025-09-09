@@ -6,6 +6,7 @@
 - Catppuccin (Macchiato) `set -g @alien_colorscheme 'catppuccin/macchiato'`
 - Nordish `set -g @alien_colorscheme 'nordish'`
 - Grayscale `set -g @alien_colorscheme '256/grayscale'`
+- EInk Color Dark `set -g @alien_colorscheme 'e_ink_color_dark'`
 
 ### Configurations
 
