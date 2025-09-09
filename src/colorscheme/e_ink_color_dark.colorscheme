@@ -7,7 +7,7 @@
 
 %if "#{==:#{@prefix_highlight_fg},}" set -g @prefix_highlight_fg "#383636" %endif
 %if "#{==:#{@prefix_highlight_bg},}" set -g @prefix_highlight_bg "#85bfb3" %endif
-%if "#{==:#{@time_fg},}"             set -g @time_fg             "#eaeae8" %endif
+%if "#{==:#{@time_fg},}"             set -g @time_fg             "#1c1b1b" %endif
 %if "#{==:#{@time_bg},}"             set -g @time_bg             "#838383" %endif
 %if "#{==:#{@host_fg},}"             set -g @host_fg             "#383636" %endif
 %if "#{==:#{@host_bg},}"             set -g @host_bg             "#7cacbc" %endif
@@ -16,8 +16,8 @@ set -g @status-bg "#383636"
 set -g status-style                bg="#383636",fg="#eaeae8"
 set -g pane-border-style           bg="#383636",fg="#838383"
 set -g pane-active-border-style    bg="#383636",fg="#90aab2"
-set -g message-style               bg="#838383",fg="#94b5ae"
-set -g message-command-style       bg="#838383",fg="#94b5ae"
+set -g message-style               bg="#383636",fg="#94b5ae"
+set -g message-command-style       bg="#383636",fg="#94b5ae"
 set -g display-panes-colour        "#383636"
 set -g display-panes-active-colour "#838383"
 
