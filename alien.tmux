@@ -10,6 +10,8 @@ __load() {
   local color_scheme=$(tmux show-option -gqv "@alien_colorscheme")
   local time_format=$(tmux show-option -gqv "@alien_time_format")
 
+  tmux source-file "$_current_dir/src/symbol.conf"
+
   if [[ -f "$_current_dir/src/colorscheme/${color_scheme}.colorscheme" ]]; then
     tmux source-file "$_current_dir/src/colorscheme/${color_scheme}.colorscheme"
   else
