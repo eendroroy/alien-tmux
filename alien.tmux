@@ -7,16 +7,16 @@ __cleanup() {
 }
 
 __load() {
-  local color_scheme=$(tmux show-option -gqv "@alien_colorscheme")
+  local color_scheme=$(tmux show-option -gqv "@alien_style")
   local time_format=$(tmux show-option -gqv "@alien_time_format")
 
   tmux source-file "$_current_dir/src/symbol.conf"
 
-  if [[ -f "$_current_dir/src/colorscheme/${color_scheme}.colorscheme" ]]; then
-    tmux source-file "$_current_dir/src/colorscheme/${color_scheme}.colorscheme"
+  if [[ -f "$_current_dir/src/style/${color_scheme}.style" ]]; then
+    tmux source-file "$_current_dir/src/style/${color_scheme}.style"
   else
     tmux display-message "Alien: Color scheme '${color_scheme}' not found. Falling back to 'default'."
-    tmux source-file "$_current_dir/src/colorscheme/default.colorscheme"
+    tmux source-file "$_current_dir/src/style/default.style"
   fi
 
     if [[ -n "$time_format" ]]; then

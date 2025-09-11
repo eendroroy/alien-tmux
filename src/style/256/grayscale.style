@@ -1,0 +1,44 @@
+%if "#{==:#{@status_fg},}"                  set -g @status_fg                  color255 %endif
+%if "#{==:#{@status_bg},}"                  set -g @status_bg                  color233 %endif
+%if "#{==:#{@pane_border_fg},}"             set -g @pane_border_fg             color255 %endif
+%if "#{==:#{@pane_border_bg},}"             set -g @pane_border_bg             color233 %endif
+%if "#{==:#{@pane_active_border_fg},}"      set -g @pane_active_border_fg      color255 %endif
+%if "#{==:#{@pane_active_border_bg},}"      set -g @pane_active_border_bg      color233 %endif
+%if "#{==:#{@message_fg},}"                 set -g @message_fg                 color255 %endif
+%if "#{==:#{@message_bg},}"                 set -g @message_bg                 color233 %endif
+%if "#{==:#{@message_command_fg},}"         set -g @message_command_fg         color255 %endif
+%if "#{==:#{@message_command_bg},}"         set -g @message_command_bg         color233 %endif
+%if "#{==:#{@display_panes_color},}"        set -g @display_panes_color        color233 %endif
+%if "#{==:#{@display_panes_active_color},}" set -g @display_panes_active_color color233 %endif
+
+%if "#{==:#{@session_fg},}"                 set -g @session_fg                 color255 %endif
+%if "#{==:#{@session_bg},}"                 set -g @session_bg                 color235 %endif
+%if "#{==:#{@window_fg},}"                  set -g @window_fg                  color255 %endif
+%if "#{==:#{@window_bg},}"                  set -g @window_bg                  color239 %endif
+%if "#{==:#{@current_window_fg},}"          set -g @current_window_fg          color233 %endif
+%if "#{==:#{@current_window_bg},}"          set -g @current_window_bg          color249 %endif
+
+%if "#{==:#{@prefix_highlight_fg},}"        set -g @prefix_highlight_fg        color232 %endif
+%if "#{==:#{@prefix_highlight_bg},}"        set -g @prefix_highlight_bg        color255 %endif
+%if "#{==:#{@time_fg},}"                    set -g @time_fg                    color232 %endif
+%if "#{==:#{@time_bg},}"                    set -g @time_bg                    color245 %endif
+%if "#{==:#{@host_fg},}"                    set -g @host_fg                    color255 %endif
+%if "#{==:#{@host_bg},}"                    set -g @host_bg                    color235 %endif
+
+%if "#{==:#{@prefix_highlight_attr},}"      set -g @prefix_highlight_attr      bold     %endif
+%if "#{==:#{@session_attr},}"               set -g @session_attr               bold     %endif
+%if "#{==:#{@window_attr},}"                set -g @window_attr                ''       %endif
+%if "#{==:#{@current_window_attr},}"        set -g @current_window_attr        bold     %endif
+%if "#{==:#{@time_attr},}"                  set -g @time_attr                  bold     %endif
+%if "#{==:#{@host_attr},}"                  set -g @host_attr                  bold     %endif
+
+%if "#{==:#{@mode-style},}" set -g @mode-style "fg=#{@status_fg},bg=#{@status_bg}" %endif
+
+set -g status-style                bg="#{@status_bg}",fg="#{@status_fg}"
+set -g pane-border-style           bg="#{@status_bg}",fg="#{@pane_border_fg}"
+set -g pane-active-border-style    bg="#{@status_bg}",fg="#{@pane_active_border_fg}"
+set -g message-style               bg="#{@status_bg}",fg="#{@message_fg}"
+set -g message-command-style       bg="#{@status_bg}",fg="#{@message_command_bg}"
+set -g display-panes-colour        "#{@display_panes_color}"
+set -g display-panes-active-colour "#{@display_panes_active_color}"
+set-window-option -g mode-style    "#{@mode-style}"
