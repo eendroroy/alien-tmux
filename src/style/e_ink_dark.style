@@ -21,9 +21,9 @@
 %if "#{==:#{@prefix_highlight_fg},}"        set -g @prefix_highlight_fg        "#cacdce" %endif
 %if "#{==:#{@prefix_highlight_bg},}"        set -g @prefix_highlight_bg        "#8f5f5f" %endif
 %if "#{==:#{@time_fg},}"                    set -g @time_fg                    "#303030" %endif
-%if "#{==:#{@time_bg},}"                    set -g @time_bg                    "#6f6f7f" %endif
-%if "#{==:#{@host_fg},}"                    set -g @host_fg                    "#303030" %endif
-%if "#{==:#{@host_bg},}"                    set -g @host_bg                    "#7f7f5f" %endif
+%if "#{==:#{@time_bg},}"                    set -g @time_bg                    "#8f8f6f" %endif
+%if "#{==:#{@host_fg},}"                    set -g @host_fg                    "#202020" %endif
+%if "#{==:#{@host_bg},}"                    set -g @host_bg                    "#7f6f7f" %endif
 
 %if "#{==:#{@prefix_highlight_attr},}"      set -g @prefix_highlight_attr      bold      %endif
 %if "#{==:#{@session_attr},}"               set -g @session_attr               ''        %endif
