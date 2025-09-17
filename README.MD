@@ -1,6 +1,6 @@
 # Alien-Tmux
 
-### styles
+## Styles
 
 - Default              `set -g @alien_style 'default'`
 - Catppuccin Macchiato `set -g @alien_style 'catppuccin/macchiato'`
@@ -15,8 +15,26 @@ set -g @alien_time_format       '%I:%M:%S %p'
 set -g @left_separator_symbol   ''
 set -g @right_separator_symbol  ''
 set -g @window_decorator_symbol ''
-set -g @start_symbol '█'
-set -g @end_symbol '█'
+set -g @start_symbol            '█'
+set -g @end_symbol              '█'
+```
+
+#### rightward arrow
+```shell
+set -g @left_separator_symbol   ''
+set -g @right_separator_symbol  ''
+set -g @window_decorator_symbol ''
+set -g @start_symbol            '█'
+set -g @end_symbol              ''
+```
+
+#### leftward arrow
+```shell
+set -g @left_separator_symbol   ''
+set -g @right_separator_symbol  ''
+set -g @window_decorator_symbol ''
+set -g @start_symbol            '█'
+set -g @end_symbol              '█'
 ```
 
 ## Themes customization
@@ -42,17 +60,39 @@ set -g @window_bg                  brightblack
 set -g @current_window_fg          black
 set -g @current_window_bg          white
 
-set -g @prefix_highlight_fg        black
-set -g @prefix_highlight_bg        red
 set -g @time_fg                    black
 set -g @time_bg                    white
 set -g @host_fg                    black
 set -g @host_bg                    red
 
-set -g @prefix_highlight_attr      bold
 set -g @session_attr               bold
 set -g @window_attr                bold
 set -g @current_window_attr        bold
 set -g @time_attr                  bold
 set -g @host_attr                  bold
+```
+
+## Prefix highlight
+
+```shell
+set -g @prefix_highlight_fg        black
+set -g @prefix_highlight_bg        red
+set -g @prefix_highlight_attr      bold
+```
+
+## Gitmux support
+
+```shell
+set -g @alien_gitmux_branch_symbol     '⎇ '
+set -g @alien_gitmux_hashprefix_symbol ':'
+set -g @alien_gitmux_ahead_symbol      '↑·'
+set -g @alien_gitmux_behind_symbol     '↓·'
+set -g @alien_gitmux_staged_symbol     '● '
+set -g @alien_gitmux_conflict_symbol   '✖ '
+set -g @alien_gitmux_modified_symbol   '✚ '
+set -g @alien_gitmux_untracked_symbol  '… '
+set -g @alien_gitmux_stashed_symbol    '⚑ '
+set -g @alien_gitmux_clean_symbol      '✔'
+set -g @alien_gitmux_insertions_symbol 'Σ'
+set -g @alien_gitmux_deletions_symbol  'Δ'
 ```

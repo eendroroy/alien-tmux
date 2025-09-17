@@ -1,3 +1,18 @@
+%if "#{==:#{@alien_gitmux_clear_fg},}"      set -g @alien_gitmux_clear_fg      default    %endif
+%if "#{==:#{@alien_gitmux_state_fg},}"      set -g @alien_gitmux_state_fg      red        %endif
+%if "#{==:#{@alien_gitmux_branch_fg},}"     set -g @alien_gitmux_branch_fg     white      %endif
+%if "#{==:#{@alien_gitmux_remote_fg},}"     set -g @alien_gitmux_remote_fg     cyan       %endif
+%if "#{==:#{@alien_gitmux_divergence_fg},}" set -g @alien_gitmux_divergence_fg default    %endif
+%if "#{==:#{@alien_gitmux_staged_fg},}"     set -g @alien_gitmux_staged_fg     green      %endif
+%if "#{==:#{@alien_gitmux_conflict_fg},}"   set -g @alien_gitmux_conflict_fg   red        %endif
+%if "#{==:#{@alien_gitmux_modified_fg},}"   set -g @alien_gitmux_modified_fg   red        %endif
+%if "#{==:#{@alien_gitmux_untracked_fg},}"  set -g @alien_gitmux_untracked_fg  magenta    %endif
+%if "#{==:#{@alien_gitmux_stashed_fg},}"    set -g @alien_gitmux_stashed_fg    cyan       %endif
+%if "#{==:#{@alien_gitmux_clean_fg},}"      set -g @alien_gitmux_clean_fg      green      %endif
+%if "#{==:#{@alien_gitmux_insertions_fg},}" set -g @alien_gitmux_insertions_fg green      %endif
+%if "#{==:#{@alien_gitmux_deletions_fg},}"  set -g @alien_gitmux_deletions_fg  red        %endif
+%if "#{==:#{@alien_gitmux_bg},}"            set -g @alien_gitmux_bg            black      %endif
+
 %if "#{==:#{@status_fg},}"                  set -g @status_fg                  "#cad3f5"  %endif
 %if "#{==:#{@status_bg},}"                  set -g @status_bg                  "#24273a"  %endif
 %if "#{==:#{@pane_border_fg},}"             set -g @pane_border_fg             "#5b6078"  %endif
