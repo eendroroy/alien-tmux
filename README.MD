@@ -2,15 +2,15 @@
 
 ## Styles
 
-- Default              `set -g @alien_style 'default'`
-- Catppuccin Macchiato `set -g @alien_style 'catppuccin/macchiato'`
-- Grayscale            `set -g @alien_style '256/grayscale'`
-- E Ink Dark           `set -g @alien_style 'e_ink_dark'`
+- Default              `set -g @alien_colorscheme 'default'`
+- Catppuccin Macchiato `set -g @alien_colorscheme 'catppuccin/macchiato'`
+- Grayscale            `set -g @alien_colorscheme '256/grayscale'`
+- E Ink Dark           `set -g @alien_colorscheme 'e_ink/dark'`
 
 ### Configurations
 
 ```shell
-set -g @alien_style             'default'
+set -g @alien_colorscheme       'default'
 set -g @alien_time_format       '%I:%M:%S %p'
 set -g @left_separator_symbol   ''
 set -g @right_separator_symbol  ''
