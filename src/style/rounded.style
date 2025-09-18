@@ -1,0 +1,5 @@
+%if "#{==:#{@left_separator_symbol},}"   set -g @left_separator_symbol   '' %endif
+%if "#{==:#{@right_separator_symbol},}"  set -g @right_separator_symbol  '' %endif
+%if "#{==:#{@window_decorator_symbol},}" set -g @window_decorator_symbol '' %endif
+%if "#{==:#{@start_symbol},}"            set -g @start_symbol            '' %endif
+%if "#{==:#{@end_symbol},}"              set -g @end_symbol              '' %endif

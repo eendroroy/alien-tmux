@@ -7,7 +7,7 @@
 - Grayscale            `set -g @alien_colorscheme '256/grayscale'`
 - E Ink Dark           `set -g @alien_colorscheme 'e_ink/dark'`
 
-### Configurations
+## Configurations
 
 ```shell
 set -g @alien_colorscheme       'default'
@@ -19,30 +19,17 @@ set -g @start_symbol            '█'
 set -g @end_symbol              '█'
 ```
 
+### Status Bar Style
 
-<details>
-<summary>Rightward arrow</summary>
-
-```shell
-set -g @left_separator_symbol   ''
-set -g @right_separator_symbol  ''
-set -g @window_decorator_symbol ''
-set -g @start_symbol            '█'
-set -g @end_symbol              ''
-```
-</details>
-
-<details>
-<summary>Leftward arrow</summary>
-
-```shell
-set -g @left_separator_symbol   ''
-set -g @right_separator_symbol  ''
-set -g @window_decorator_symbol ''
-set -g @start_symbol            '█'
-set -g @end_symbol              '█'
-```
-</details>
+- Powerline (default) `set -g @alien_status_bar_style 'powerline'`
+- Powerline-left      `set -g @alien_status_bar_style 'powerline-left'`
+- Powerline-right     `set -g @alien_status_bar_style 'powerline-right'`
+- Rounded             `set -g @alien_status_bar_style 'rounded'`
+- Tilled              `set -g @alien_status_bar_style 'tilled'`
+- Tilled-left         `set -g @alien_status_bar_style 'tilled-left'`
+- Tilled-reverse      `set -g @alien_status_bar_style 'tilled-reverse'`
+- Tilled-right        `set -g @alien_status_bar_style 'tilled-right'`
+- Flat                `set -g @alien_status_bar_style 'flat'`
 
 ## Themes customization
 
@@ -81,6 +68,7 @@ set -g @current_window_attr        bold
 set -g @time_attr                  bold
 set -g @host_attr                  bold
 ```
+
 </details>
 
 ## Prefix highlight Support
@@ -124,6 +112,7 @@ set -g @alien_gitmux_clean_symbol      '✔'
 set -g @alien_gitmux_insertions_symbol 'Σ'
 set -g @alien_gitmux_deletions_symbol  'Δ'
 ```
+
 </details>
 
 <details>
@@ -145,6 +134,7 @@ set -g @alien_gitmux_insertions_fg green
 set -g @alien_gitmux_deletions_fg  red
 set -g @alien_gitmux_bg            black
 ```
+
 </details>
 
 ## Contributing
@@ -153,11 +143,11 @@ Bug reports and pull requests are welcome on GitHub at [alien-tmux](https://gith
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to
 the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-  1. Fork it ( https://github.com/eendroroy/alien-tmux/fork )
-  2. Create your feature branch (`git checkout -b my-new-feature`)
-  3. Commit your changes (`git commit -am 'Add some feature'`)
-  4. Push to the branch (`git push origin my-new-feature`)
-  5. Create a new Pull Request
+1. Fork it ( https://github.com/eendroroy/alien-tmux/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
 
 ## License
 
