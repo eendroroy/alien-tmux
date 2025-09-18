@@ -12,6 +12,7 @@ __load() {
 
   tmux set-environment -g ALIEN_GITMUX_CFG "${_current_dir}/src/gitmux.yaml"
 
+  tmux source-file "$_current_dir/src/options.conf"
   tmux source-file "$_current_dir/src/symbol.conf"
 
   if [[ -f "$_current_dir/src/style/${color_scheme}.style" ]]; then

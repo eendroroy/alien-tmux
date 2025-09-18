@@ -39,6 +39,8 @@ set -g @end_symbol              '█'
 
 ## Themes customization
 
+Customize colors and attributes in your `.tmux.conf`:
+
 ```shell
 set -g @status_fg                  white
 set -g @status_bg                  black
@@ -74,6 +76,8 @@ set -g @host_attr                  bold
 
 ## Prefix highlight
 
+Customize prefix highlight colors and attributes:
+
 ```shell
 set -g @prefix_highlight_fg        black
 set -g @prefix_highlight_bg        red
@@ -81,6 +85,14 @@ set -g @prefix_highlight_attr      bold
 ```
 
 ## Gitmux support
+
+Enable gitmux in your `.tmux.conf`:
+
+```shell
+set -g @alien_gitmux_enabled true
+```
+
+Customize gitmux symbols:
 
 ```shell
 set -g @alien_gitmux_branch_symbol     '⎇ '
