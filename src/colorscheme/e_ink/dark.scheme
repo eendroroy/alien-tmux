@@ -42,9 +42,9 @@
 
 %if "#{==:#{@prefix_highlight_attr},}"      set -g @prefix_highlight_attr      bold      %endif
 %if "#{==:#{@session_attr},}"               set -g @session_attr               ''        %endif
-%if "#{==:#{@window_attr},}"                set -g @window_attr                ''        %endif
-%if "#{==:#{@current_window_attr},}"        set -g @current_window_attr        ''        %endif
-%if "#{==:#{@time_attr},}"                  set -g @time_attr                  bold      %endif
+%if "#{==:#{@window_attr},}"                set -g @window_attr                bold      %endif
+%if "#{==:#{@current_window_attr},}"        set -g @current_window_attr        bold      %endif
+%if "#{==:#{@time_attr},}"                  set -g @time_attr                  ''        %endif
 %if "#{==:#{@host_attr},}"                  set -g @host_attr                  ''        %endif
 
 %if "#{==:#{@mode-style},}" set -g @mode-style "fg=#6f7f6f,bg=#303030" %endif
