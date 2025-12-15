@@ -32,6 +32,8 @@
 %if "#{==:#{@window_bg},}"                  set -g @window_bg                  brightblack %endif
 %if "#{==:#{@current_window_fg},}"          set -g @current_window_fg          brightblack %endif
 %if "#{==:#{@current_window_bg},}"          set -g @current_window_bg          green       %endif
+%if "#{==:#{@scrollback_fg},}"              set -g @scrollback_fg              gray        %endif
+%if "#{==:#{@scrollback_bg},}"              set -g @scrollback_bg              brightblack %endif
 
 %if "#{==:#{@prefix_highlight_fg},}"        set -g @prefix_highlight_fg        white       %endif
 %if "#{==:#{@prefix_highlight_bg},}"        set -g @prefix_highlight_bg        red         %endif

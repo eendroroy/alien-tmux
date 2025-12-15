@@ -26,26 +26,28 @@
 %if "#{==:#{@display_panes_color},}"        set -g @display_panes_color        "#494d64"  %endif
 %if "#{==:#{@display_panes_active_color},}" set -g @display_panes_active_color "#5b6078"  %endif
 
-%if "#{==:#{@session_fg},}"                 set -g @session_fg                  "#494d64" %endif
-%if "#{==:#{@session_bg},}"                 set -g @session_bg                  "#8aadf4" %endif
-%if "#{==:#{@window_fg},}"                  set -g @window_fg                   "#a5adcb" %endif
-%if "#{==:#{@window_bg},}"                  set -g @window_bg                   "#5b6078" %endif
-%if "#{==:#{@current_window_fg},}"          set -g @current_window_fg           "#494d64" %endif
-%if "#{==:#{@current_window_bg},}"          set -g @current_window_bg           "#a5adcb" %endif
+%if "#{==:#{@session_fg},}"                 set -g @session_fg                 "#494d64" %endif
+%if "#{==:#{@session_bg},}"                 set -g @session_bg                 "#8aadf4" %endif
+%if "#{==:#{@window_fg},}"                  set -g @window_fg                  "#a5adcb" %endif
+%if "#{==:#{@window_bg},}"                  set -g @window_bg                  "#5b6078" %endif
+%if "#{==:#{@current_window_fg},}"          set -g @current_window_fg          "#494d64" %endif
+%if "#{==:#{@current_window_bg},}"          set -g @current_window_bg          "#a5adcb" %endif
+%if "#{==:#{@scrollback_fg},}"              set -g @scrollback_fg              "#a5adcb" %endif
+%if "#{==:#{@scrollback_bg},}"              set -g @scrollback_bg              "#5b6078" %endif
 
-%if "#{==:#{@prefix_highlight_fg},}"        set -g @prefix_highlight_fg         "#494d64" %endif
-%if "#{==:#{@prefix_highlight_bg},}"        set -g @prefix_highlight_bg         "#ed8796" %endif
-%if "#{==:#{@time_fg},}"                    set -g @time_fg                     "#494d64" %endif
-%if "#{==:#{@time_bg},}"                    set -g @time_bg                     "#a5adcb" %endif
-%if "#{==:#{@host_fg},}"                    set -g @host_fg                     "#494d64" %endif
-%if "#{==:#{@host_bg},}"                    set -g @host_bg                     "#eed49f" %endif
+%if "#{==:#{@prefix_highlight_fg},}"        set -g @prefix_highlight_fg        "#494d64" %endif
+%if "#{==:#{@prefix_highlight_bg},}"        set -g @prefix_highlight_bg        "#ed8796" %endif
+%if "#{==:#{@time_fg},}"                    set -g @time_fg                    "#494d64" %endif
+%if "#{==:#{@time_bg},}"                    set -g @time_bg                    "#a5adcb" %endif
+%if "#{==:#{@host_fg},}"                    set -g @host_fg                    "#494d64" %endif
+%if "#{==:#{@host_bg},}"                    set -g @host_bg                    "#eed49f" %endif
 
-%if "#{==:#{@prefix_highlight_attr},}"      set -g @prefix_highlight_attr       bold      %endif
-%if "#{==:#{@session_attr},}"               set -g @session_attr                bold      %endif
-%if "#{==:#{@window_attr},}"                set -g @window_attr                 bold      %endif
-%if "#{==:#{@current_window_attr},}"        set -g @current_window_attr         bold      %endif
-%if "#{==:#{@time_attr},}"                  set -g @time_attr                   bold      %endif
-%if "#{==:#{@host_attr},}"                  set -g @host_attr                   bold      %endif
+%if "#{==:#{@prefix_highlight_attr},}"      set -g @prefix_highlight_attr      bold      %endif
+%if "#{==:#{@session_attr},}"               set -g @session_attr               bold      %endif
+%if "#{==:#{@window_attr},}"                set -g @window_attr                bold      %endif
+%if "#{==:#{@current_window_attr},}"        set -g @current_window_attr        bold      %endif
+%if "#{==:#{@time_attr},}"                  set -g @time_attr                  bold      %endif
+%if "#{==:#{@host_attr},}"                  set -g @host_attr                  bold      %endif
 
 %if "#{==:#{@mode-style},}" set -g @mode-style "fg=#6f7f6f,bg=#303030" %endif
 

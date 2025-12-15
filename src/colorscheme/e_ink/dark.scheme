@@ -32,6 +32,8 @@
 %if "#{==:#{@window_bg},}"                  set -g @window_bg                  "#303030" %endif
 %if "#{==:#{@current_window_fg},}"          set -g @current_window_fg          "#303030" %endif
 %if "#{==:#{@current_window_bg},}"          set -g @current_window_bg          "#6f7f6f" %endif
+%if "#{==:#{@scrollback_fg},}"              set -g @scrollback_fg              "#6f7f6f" %endif
+%if "#{==:#{@scrollback_bg},}"              set -g @scrollback_bg              "#303030" %endif
 
 %if "#{==:#{@prefix_highlight_fg},}"        set -g @prefix_highlight_fg        "#cacdce" %endif
 %if "#{==:#{@prefix_highlight_bg},}"        set -g @prefix_highlight_bg        "#8f5f5f" %endif
